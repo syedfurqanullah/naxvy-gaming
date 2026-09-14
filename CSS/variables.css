@@ -1,0 +1,455 @@
+/* =========================================================
+   NEXVY GAMING — DESIGN VARIABLES
+   Global design tokens used throughout the website.
+========================================================= */
+
+/* =========================================================
+   COLOR SYSTEM
+========================================================== */
+
+:root {
+  /* ---------- Core Background Colors ---------- */
+
+  --color-background: #050811;
+  --color-background-soft: #080d17;
+  --color-background-deep: #03060c;
+
+  --color-surface: #0a101c;
+  --color-surface-soft: #0d1422;
+  --color-surface-elevated: #111a2a;
+
+  --color-surface-hover: #151f31;
+
+  /* ---------- Brand Colors ---------- */
+
+  --color-primary: #635bff;
+  --color-primary-light: #766cff;
+  --color-primary-dark: #4d46d8;
+
+  --color-accent: #6d4aff;
+  --color-accent-light: #8b6cff;
+
+  --color-neon-blue: #00b7ff;
+  --color-neon-blue-soft: #167dff;
+
+  --color-neon-purple: #7a35ff;
+  --color-neon-violet: #9b4dff;
+
+  /* ---------- Gradient Colors ---------- */
+
+  --gradient-primary: linear-gradient(135deg, #5b4bff 0%, #7c3cff 100%);
+
+  --gradient-primary-hover: linear-gradient(135deg, #6f61ff 0%, #934cff 100%);
+
+  --gradient-neon: linear-gradient(135deg, #4268ff 0%, #863dff 100%);
+
+  --gradient-hero: radial-gradient(
+    circle at 75% 45%,
+    rgba(71, 69, 255, 0.18),
+    transparent 38%
+  );
+
+  --gradient-glow: radial-gradient(
+    circle,
+    rgba(99, 91, 255, 0.28),
+    transparent 70%
+  );
+
+  /* ---------- Text Colors ---------- */
+
+  --color-text-primary: #f5f7ff;
+  --color-text-secondary: #aeb7ca;
+  --color-text-muted: #727d91;
+  --color-text-subtle: #566174;
+
+  --color-text-inverse: #050811;
+
+  /* ---------- Border Colors ---------- */
+
+  --color-border: rgba(151, 166, 194, 0.14);
+  --color-border-light: rgba(151, 166, 194, 0.2);
+  --color-border-strong: rgba(151, 166, 194, 0.28);
+
+  --color-border-primary: rgba(99, 91, 255, 0.45);
+
+  /* ---------- Status Colors ---------- */
+
+  --color-success: #31d59b;
+  --color-warning: #ffbd59;
+  --color-error: #ff5c78;
+  --color-info: #42b8ff;
+
+  /* ---------- Overlay Colors ---------- */
+
+  --color-overlay-light: rgba(255, 255, 255, 0.04);
+  --color-overlay-medium: rgba(255, 255, 255, 0.07);
+  --color-overlay-dark: rgba(0, 0, 0, 0.45);
+  --color-overlay-heavy: rgba(0, 0, 0, 0.72);
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================== */
+
+:root {
+  /* ---------- Font Families ---------- */
+
+  --font-primary: "Inter", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* ---------- Font Sizes ---------- */
+
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-base: 0.9375rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 4rem;
+  --font-size-7xl: 5rem;
+
+  /* ---------- Responsive Heading Sizes ---------- */
+
+  --heading-hero: clamp(3.25rem, 7vw, 6.5rem);
+
+  --heading-section: clamp(2rem, 4vw, 3.75rem);
+
+  --heading-card: clamp(1.125rem, 2vw, 1.5rem);
+
+  /* ---------- Line Heights ---------- */
+
+  --line-height-none: 1;
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ---------- Font Weights ---------- */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ---------- Letter Spacing ---------- */
+
+  --letter-spacing-tight: -0.04em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.08em;
+  --letter-spacing-wider: 0.14em;
+  --letter-spacing-widest: 0.2em;
+}
+
+/* =========================================================
+   SPACING SYSTEM
+========================================================== */
+
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+
+  /* ---------- Section Spacing ---------- */
+
+  --section-padding-y: clamp(4.5rem, 8vw, 8rem);
+
+  --section-padding-y-small: clamp(3.5rem, 6vw, 5rem);
+
+  /* ---------- Container Gaps ---------- */
+
+  --container-padding: clamp(1.25rem, 4vw, 4rem);
+}
+
+/* =========================================================
+   LAYOUT
+========================================================== */
+
+:root {
+  /* ---------- Container Widths ---------- */
+
+  --container-width: 1440px;
+  --container-width-wide: 1600px;
+  --container-width-narrow: 1180px;
+
+  /* ---------- Header ---------- */
+
+  --header-height: 76px;
+  --header-height-mobile: 68px;
+
+  /* ---------- Grid ---------- */
+
+  --grid-gap-xs: 0.5rem;
+  --grid-gap-sm: 1rem;
+  --grid-gap-md: 1.5rem;
+  --grid-gap-lg: 2rem;
+  --grid-gap-xl: 3rem;
+
+  /* ---------- Z Index Layers ---------- */
+
+  --z-base: 1;
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-drawer: 500;
+  --z-overlay: 700;
+  --z-modal: 800;
+  --z-toast: 1000;
+  --z-tooltip: 1100;
+}
+
+/* =========================================================
+   BORDER RADIUS
+========================================================== */
+
+:root {
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --radius-3xl: 30px;
+
+  --radius-card: 16px;
+  --radius-button: 8px;
+  --radius-input: 8px;
+
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+}
+
+/* =========================================================
+   SHADOWS
+========================================================== */
+
+:root {
+  /* ---------- Surface Shadows ---------- */
+
+  --shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.28);
+
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+  --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.45);
+
+  /* ---------- Brand Glow ---------- */
+
+  --shadow-primary: 0 8px 30px rgba(99, 91, 255, 0.28);
+
+  --shadow-primary-strong: 0 12px 40px rgba(99, 91, 255, 0.4);
+
+  --shadow-blue-glow: 0 0 40px rgba(0, 183, 255, 0.2);
+
+  --shadow-purple-glow: 0 0 50px rgba(122, 53, 255, 0.22);
+}
+
+/* =========================================================
+   GLASS EFFECTS
+========================================================== */
+
+:root {
+  --glass-background: rgba(10, 16, 28, 0.72);
+
+  --glass-background-light: rgba(255, 255, 255, 0.035);
+
+  --glass-border: rgba(151, 166, 194, 0.14);
+
+  --glass-blur: 18px;
+}
+
+/* =========================================================
+   BUTTON SYSTEM
+========================================================== */
+
+:root {
+  --button-height-sm: 38px;
+  --button-height-md: 46px;
+  --button-height-lg: 52px;
+
+  --button-padding-x-sm: 1rem;
+  --button-padding-x-md: 1.35rem;
+  --button-padding-x-lg: 1.65rem;
+
+  --button-font-size: 0.8125rem;
+  --button-font-weight: var(--font-weight-semibold);
+}
+
+/* =========================================================
+   FORM SYSTEM
+========================================================== */
+
+:root {
+  --input-height: 50px;
+  --input-padding-x: 1rem;
+
+  --input-background: rgba(255, 255, 255, 0.035);
+  --input-background-focus: rgba(255, 255, 255, 0.055);
+
+  --input-border: var(--color-border);
+  --input-border-focus: var(--color-border-primary);
+
+  --input-placeholder: var(--color-text-subtle);
+}
+
+/* =========================================================
+   PRODUCT SYSTEM
+========================================================== */
+
+:root {
+  --product-image-background: linear-gradient(145deg, #0d1524 0%, #080d17 100%);
+
+  --product-card-padding: 1.25rem;
+
+  --product-card-min-height: 0;
+
+  --product-image-ratio: 4 / 3;
+}
+
+/* =========================================================
+   TRANSITIONS
+========================================================== */
+
+:root {
+  --transition-fast: 150ms ease;
+
+  --transition-base: 250ms ease;
+
+  --transition-medium: 350ms ease;
+
+  --transition-slow: 500ms ease;
+
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* =========================================================
+   ANIMATION
+========================================================== */
+
+:root {
+  --animation-duration-fast: 180ms;
+  --animation-duration-base: 300ms;
+  --animation-duration-medium: 500ms;
+  --animation-duration-slow: 800ms;
+
+  --animation-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* =========================================================
+   RESPONSIVE BREAKPOINTS
+========================================================== */
+
+:root {
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+}
+
+/* =========================================================
+   COMPONENT SPECIFIC VARIABLES
+========================================================== */
+
+:root {
+  /* ---------- Hero ---------- */
+
+  /* Prevent a fixed hero height from leaving empty space below its content. */
+  --hero-min-height: min(760px, 100svh);
+
+  --hero-content-max-width: 650px;
+
+  --hero-image-max-width: 760px;
+
+  /* ---------- Product Cards ---------- */
+
+  --product-grid-columns: 4;
+
+  --product-card-hover-y: -8px;
+
+  /* ---------- Featured Product ---------- */
+
+  --featured-product-image-size: min(680px, 45vw);
+
+  /* ---------- Setup Builder ---------- */
+
+  --setup-grid-columns: 4;
+
+  --setup-summary-width: 340px;
+
+  /* ---------- Testimonial ---------- */
+
+  --testimonial-card-width: 360px;
+
+  /* ---------- Drawer ---------- */
+
+  --drawer-width: 440px;
+
+  /* ---------- Modal ---------- */
+
+  --modal-width: 920px;
+
+  --auth-modal-width: 520px;
+
+  /* ---------- Toast ---------- */
+
+  --toast-width: 360px;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================== */
+
+:root {
+  --focus-outline-width: 2px;
+
+  --focus-outline-offset: 3px;
+
+  --focus-outline-color: var(--color-primary);
+}
+
+/* =========================================================
+   REDUCED MOTION SUPPORT
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-medium: 0ms;
+    --transition-slow: 0ms;
+    --transition-smooth: 0ms;
+    --transition-spring: 0ms;
+
+    --animation-duration-fast: 0ms;
+    --animation-duration-base: 0ms;
+    --animation-duration-medium: 0ms;
+    --animation-duration-slow: 0ms;
+  }
+}
