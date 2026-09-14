@@ -68,6 +68,7 @@ Nexvy Gaming/
 assets/
   screenshots/
 `-- README.md
+└──.gitignore
 ```
 
 ## Notes
