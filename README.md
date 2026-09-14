@@ -39,6 +39,12 @@ NEXVY Gaming is a frontend project focused on creating a realistic gaming store 
 - Testimonials and FAQ sections
 - Newsletter form validation
 
+## Tech Stack 
+
+- HTML5
+- Modern CSS3
+- JavaScript (ES6+)
+
 ## Run Locally
 
 Serve the project with a local static server, then visit `http://localhost:8000`.
