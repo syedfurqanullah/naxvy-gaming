@@ -51,24 +51,30 @@ python -m http.server 8000
 
 ```text
 Nexvy Gaming/
-|-- index.html
-|-- CSS/
-|   |-- variables.css
-|   |-- style.css
-|   `-- responsive.css
-|-- JS/
-|   |-- storage.js
-|   |-- data.js
-|   |-- products.js
-|   |-- cart.js
-|   |-- search.js
-|   |-- wishlist.js
-|   |-- setup-builder.js
-|   `-- main.js
-assets/
-  screenshots/
-`-- README.md
-└──.gitignore
+│
+├── index.html
+│
+├── CSS/
+│   ├── variables.css
+│   ├── style.css
+│   └── responsive.css
+│
+├── JS/
+│   ├── storage.js
+│   ├── data.js
+│   ├── products.js
+│   ├── cart.js
+│   ├── search.js
+│   ├── wishlist.js
+│   ├── setup-builder.js
+│   └── main.js
+│
+├── assets/
+│   └── screenshots/
+│
+├── README.md
+│
+└── .gitignore
 ```
 
 ## Notes
