@@ -1,8 +1,8 @@
-# NEXVY Gaming Ecomerce Store
+# NEXVY Gaming E-commerce Landing page 
 
 A modern and fully responsive gaming e-commerce frontend built with HTML5, Modern CSS3, and JavaScript.
 
-NEXVY Gaming is a frontend project focused on creating a realistic gaming store experience with modern UI design, responsive layouts, product browsing, filtering, cart interactions, and an interactive gaming setup builder.
+NEXVY Gaming is a frontend project focused on creating a realistic gaming store experience with modern UI design, responsive layouts,
 
 ## Live Demo
 
